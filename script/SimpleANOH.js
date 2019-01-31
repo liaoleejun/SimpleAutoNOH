@@ -19,8 +19,7 @@ function addIndex() {
         indices[hIndex]++;
 
         // display the full position in the hierarchy
-        jQuery(this).prepend(indices.join(".") + "." + "&emsp;");
-
+        jQuery(this).prepend("<span style='color: #ccc;'>" + indices.join(".") + "." + "</span>" + "&emsp;&emsp;&emsp;");
     });
 }
 
